@@ -14,6 +14,10 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font-size: 14px;
+}
+
 .btn.btn-default {
     margin-right: 16px;
     padding: 6px 15px;
@@ -40,7 +44,8 @@ h3 {
     height: 40px;
     padding-left: 25px;
     padding-right: 25px;
-    visibility:hidden;
+    visibility: hidden;
+    background-color: white;
 }
 
 .news {
@@ -70,6 +75,11 @@ h3 {
     font-size: 12px;
     color: rgb(91, 105, 135);
     text-decoration: none;
+}
+
+.glyphicon.glyphicon-menu-down {
+    font-size: 10px;
+    color: rgb(91 104 134);
 }
 
 .header-top a:hover {
@@ -140,10 +150,12 @@ a.logo-link {
 /*--------header---------*/
 /*--------jumbotron-----------*/
 .jumbotron {
+    margin-top: 100px;
     background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 0;
 }
 
 .jumbotron a.info:hover {
@@ -207,6 +219,7 @@ input.data {
     border: 1px solid rgb(229, 232, 237);
     border-radius: 3px;
     font-size: 16px;
+    color: #031b4e;
 }
 
 input.data:focus {
@@ -262,6 +275,34 @@ input.data:focus {
     color: white;
 }
 /*----------media-query----------*/
+/*----------section partners----------*/
+.partners {
+    background-color: rgb(243 245 249);
+    padding: 64px 24px;
+}
+
+.partners h4 {
+    color: rgb(91, 105, 135);
+}
+
+.partners a {
+    font-size: 16px;
+    color: rgb(0, 105, 255);
+}
+
+.a-logogrid {
+    margin: 20px 0 10px;
+}
+
+.partners a:hover {
+    color: rgb(22, 51, 255);
+    text-decoration: none;
+}
+
+.partners a i {
+    font-size: 12px;
+}
+/*--------media query---------*/
 @media screen and (min-width: 768px) {
     .jumbotron h1 {
         font-style: 58px;
@@ -278,6 +319,9 @@ input.data:focus {
         text-align: left;
     }
     .jumbotron p.intro {
+        text-align: left;
+    }
+    .jumbotron p.text {
         text-align: left;
     }
     .card {
