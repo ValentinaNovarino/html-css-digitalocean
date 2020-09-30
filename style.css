@@ -35,7 +35,7 @@ h3 {
     font-size: 14px;
     font-weight: 700;
 }
-/*-----------header-top-----------*/
+/*-----------header-----------*/
 .header-top {
     height: 40px;
     padding-left: 25px;
@@ -95,38 +95,56 @@ h3 {
     line-height: 40px;
     padding-left: 25px;
 }
-/*----------header-top---------*/
-/*----------header-bottom-----------*/
-/*.navbar.navbar-default {
-    margin-top: 40px;
+.navbar-default {
     background-color: white;
-    border-top: 1px solid rgb(231, 231, 231);
+    border: none;
 }
 
-.logo {
-    height: 28px;
+.header-bottom {
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    border-top: 1px solid rgb(229, 232, 237);
+}
+
+img.logo {
     width: 172px;
+    height: 28px;
 }
 
-.navbar-form.navbar-right {
-    margin-top: 13px;
-    margin-bottom: 13px;
+li.menu {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 5px;
 }
 
-.navbar-default .navbar-nav > li > a {
+a.menu {
     color: rgb(3, 27, 79);
-    padding: 20px 12px;
+    text-decoration: none;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: rgb(0 106 255);
-}*/
+a.menu:hover {
+    color: rgb(0, 106, 255);
+}
+
+a.logo-link {
+    line-height: 60px;
+}
+
+.btn.sign {
+    margin-top: 13px;
+}
+/*--------header---------*/
 /*--------jumbotron-----------*/
 .jumbotron {
     background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.jumbotron a.info:hover {
+    text-decoration: none;
 }
 
 .jumbotron p {
@@ -136,6 +154,11 @@ h3 {
     border-radius: 6px;
     padding: 10px;
     margin-bottom: 50px;
+}
+
+.jumbotron p:hover {
+    transition: 1s;
+    background-color: rgb(21, 205, 114);
 }
 
 .jumbotron h1 {
@@ -237,14 +260,14 @@ input.data:focus {
 }
 /*----------media-query----------*/
 @media screnn and (min-width: 768px) {
-    .header-bottom {
+    .navbar-header {
         float: none;
     }
     .navbar-toggle {
         display: block;
     }
     .navbar-collapse.collapse {
-       display: none !important; /* per sovrascrivere l'important di bootstrap */
+        display: none !important;
     }
     .jumbotron h1 {
         font-style: 58px;
@@ -255,14 +278,14 @@ input.data:focus {
     .header-top {
         visibility: visible;
     }
-    .header-bottom {
+    .navbar-header {
         float: left;
     }
     .navbar-toggle {
-       display: none;
+        display: none;
     }
-   .navbar-collapse.collapse {
-        display: block !important; /* per sovrascrivere l'important di bootstrap */
+    .navbar-collapse.collapse {
+        display: block !important;
     }
     .jumbotron p {
         font-size: 16px;
