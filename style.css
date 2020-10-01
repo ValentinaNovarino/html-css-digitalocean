@@ -340,7 +340,9 @@ main {
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(3, 27, 78, 0.6);
 }
-
+.configurations-img {
+    margin-top: 10px;
+}
 .configurations a {
     padding: 9px 20px;
     font-size: 14px;
@@ -436,6 +438,7 @@ main {
         font-size: 16px;
     }
     .configurations li {
+        padding-bottom: 0;
         border-bottom: none;
         border-left: 2px solid rgba(3, 27, 78, 0.6);
     }
