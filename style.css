@@ -214,8 +214,7 @@ a.logo-link {
 }
 
 .card-cta {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    height: 117px;
     margin-left: 28px;
     margin-right: 28px;
 }
@@ -250,12 +249,15 @@ input.data:focus {
 }
 
 .card-cta button.btn.btn-default {
-    margin: 0;
-    font-size: 16px;
+    font-size: 14px;
+    float: left;
+    margin-top: 32px;
 }
 
 .card-cta button.btn.btn-default.google {
-    padding: 13px 30px 16px;
+    padding: 13px 0;
+    width: 80%;
+    margin-right: 10px;
 }
 
 .card-cta button.btn.btn-default.google:hover {
@@ -265,8 +267,10 @@ input.data:focus {
 }
 
 .card-cta button.btn.btn-default.github {
-    padding: 13px;
+    padding: 11px 0;
+    margin-right: 0;
     font-size: 18px;
+    width: calc(20% - 14px);
 }
 
 .card-cta button.btn.btn-default.github:hover {
@@ -326,14 +330,20 @@ main {
     color: rgb(91 105 135);
     font-weight: 300;
 }
+
 .configurations ul {
     padding-left: 0;
+}
+
+.configurations li {
+    display: inline;
+    padding-bottom: 10px;
     border-bottom: 2px solid rgba(3, 27, 78, 0.6);
 }
 
 .configurations a {
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 9px 20px;
+    font-size: 14px;
     color: rgba(3, 27, 78, 0.6);
 }
 
@@ -422,9 +432,15 @@ main {
     .jumbotron-text {
         padding-top: 100px;
     }
-    .configurations ul {
+    .card-cta button.btn.btn-default {
+        font-size: 16px;
+    }
+    .configurations li {
         border-bottom: none;
         border-left: 2px solid rgba(3, 27, 78, 0.6);
+    }
+    .configurations a {
+        font-size: 16px;
     }
     .configurations a:focus {
         border-bottom: none;
