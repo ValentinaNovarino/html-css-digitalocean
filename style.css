@@ -125,17 +125,25 @@ h4 {
     border-top: 1px solid rgb(229, 232, 237);
 }
 
+.navbar-toggle.collapsed {
+    border: none;
+}
+
+.navbar-toggle.collapsed:hover {
+    background: none;
+}
+
 img.logo {
     width: 172px;
     height: 28px;
 }
-
-ul.menu {
-    padding-left: 20px;
-}
+ ul.menu {
+    max-width: 700px;
+    display: inline-block;
+ }
 li.menu {
     display: inline-block;
-    line-height: 60px;
+    line-height: 70px;
     padding: 0 5px;
 }
 
@@ -150,6 +158,14 @@ a.menu:hover {
 
 a.logo-link {
     line-height: 60px;
+}
+
+.button.text-right {
+    max-width: 200px;
+    margin-top: 5px;
+    margin-right: 0;
+    display: inline-block;
+    float: right;
 }
 
 .btn.sign {
@@ -579,6 +595,7 @@ p.box-story.position {
     margin-top: 20px;
     padding: 20px 28px;
     font-size: 16px;
+    display: inline-block;
 }
 
 .start button.btn.btn-default:hover {
@@ -655,6 +672,9 @@ footer p {
 @media screen and (min-width: 768px) {
     .jumbotron h1 {
         font-style: 58px;
+    }
+    .start button.btn.btn-default {
+        margin-top: 10px;
     }
 }
 @media screen and (min-width: 992px) {
