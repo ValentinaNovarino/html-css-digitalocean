@@ -48,6 +48,18 @@ h4 {
     font-size: 14px;
     font-weight: 700;
 }
+
+.shot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 2px solid rgb(0, 105, 255);
+    border-radius: 100%;
+}
+
+.shot:focus {
+    background-color: rgb(0, 105, 255);
+}
 /*-----------header-----------*/
 .header-top {
     height: 40px;
@@ -409,18 +421,6 @@ main {
     font-size: 16px;
     color: rgb(91 105 135);
     font-weight: 300;
-}
-
-.pallino {
-    height: 10px;
-    width: 10px;
-    background-color: white;
-    border: 2px solid rgb(0, 105, 255);
-    border-radius: 100%;
-}
-
-.pallino:focus {
-    background-color: rgb(0, 105, 255);
 }
 /*---------scope section-------*/
 .services {
