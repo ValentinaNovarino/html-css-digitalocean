@@ -60,6 +60,20 @@ h4 {
 .shot:focus {
     background-color: rgb(0, 105, 255);
 }
+
+.indicator {
+    color: rgba(3, 27, 78, 0.3);
+}
+
+.recipients .indicator {
+    position:relative;
+    top: 250px;
+}
+
+.story .indicator {
+    position:relative;
+    top: 180px;
+}
 /*-----------header-----------*/
 .header-top {
     height: 40px;
@@ -149,10 +163,12 @@ img.logo {
     width: 172px;
     height: 28px;
 }
- ul.menu {
+
+ul.menu {
     max-width: 700px;
     display: inline-block;
- }
+}
+
 li.menu {
     display: inline-block;
     line-height: 70px;
@@ -314,7 +330,6 @@ input.data:focus {
 .jumbotron p a {
     color: white;
 }
-/*----------media-query----------*/
 /*----------section partners----------*/
 main {
     background-color: rgb(243 245 249);
@@ -366,7 +381,7 @@ main {
 .configurations li {
     display: inline;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgba(3, 27, 78, 0.6);
+    border-bottom: 2px solid rgba(3, 27, 78, 0.1);
 }
 .configurations-img {
     margin-top: 10px;
@@ -407,12 +422,6 @@ main {
     font-size: 20px;
     color: rgb(3 27 78);;
     font-weight: 300;
-}
-
-.indicator {
-    color: rgb(3 27 78);
-    position:relative;
-    top: 250px;
 }
 
 .recipients p {
@@ -473,7 +482,7 @@ main {
     background-position: center;
 }
 
-.data-center p {
+.data-center p.intro {
     margin-bottom: 50px;
     font-size: 20px;
     color: white;
@@ -616,10 +625,6 @@ footer {
     padding-top: 20px;
 }
 
-footer hr {
-    width: calc(100% - 50px);
-}
-
 footer h4 {
     margin: 30px 0 28px;
     padding-left: 40px;
@@ -648,6 +653,10 @@ footer a:hover {
 
 footer p {
     line-height: 50px;
+}
+
+footer hr {
+    opacity: 0.3;
 }
 
 .footer-bottom ul {
@@ -695,6 +704,7 @@ footer p {
     }
     .card {
         min-width: 370px;
+        float: right;
     }
     .jumbotron-text {
         padding-top: 100px;
@@ -705,7 +715,7 @@ footer p {
     .configurations li {
         padding-bottom: 0;
         border-bottom: none;
-        border-left: 2px solid rgba(3, 27, 78, 0.6);
+        border-left: 2px solid rgba(3, 27, 78, 0.1);
     }
     .configurations a {
         font-size: 16px;
